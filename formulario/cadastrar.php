@@ -12,7 +12,7 @@
 
   <h1>Cadastro de Usuário</h1>
 
-  <form action="" method="">
+  <form action="usuario_controller.php" method="post">
 
     <fieldset>
       <legend>Dados do Acesso</legend>
@@ -56,6 +56,13 @@
         <label for="bairro">Bairro: </label>
         <input name="bairro" type="text" id="bairro">
       </p>
+    
+      <p>
+        <label for="cidade">Cidade: </label>
+        <input name="cidade" type="text" id="cidade">
+      </p>
+
+      
 
       <p>
         <label for="estado">Estado: </label>
@@ -111,19 +118,19 @@
         <legend>Selecione os Cursos do seu interesse</legend>
         <p>
           <label>
-            <input type="checkbox" name="cursos" value="Informática Básica"> Informática Básica
+            <input type="checkbox" name="cursos[]" value="Informática Básica"> Informática Básica
           </label>
 
           <label>
-            <input type="checkbox" name="cursos" value="PHP"> PHP
+            <input type="checkbox" name="cursos[]" value="PHP"> PHP
           </label>
 
           <label>
-            <input type="checkbox" name="cursos" value="HTML5 & CSS3"> HTML5 & CSS3
+            <input type="checkbox" name="cursos[]" value="HTML5 & CSS3"> HTML5 & CSS3
           </label>
 
           <label>
-            <input type="checkbox" name="cursos" value="JavaScript"> JavaScript
+            <input type="checkbox" name="cursos[]" value="JavaScript"> JavaScript
           </label>
 
         </p>
